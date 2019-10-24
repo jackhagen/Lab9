@@ -60,15 +60,14 @@ public class Lab9 {
 				int i = 0; i < items.size(); i++) {
 			System.out.println(items.get(i) + " $" + cost.get(i));
 
+			int arrSize = items.size();
+			double totalCost = items.size() * cost.get(i);
+
+			System.out.println("The total cost is: " + totalCost);
+			System.out.println("The average cost is: " + averageCost());
+
 		}
 		scnr.close();
-
-		int arrSize = items.size();
-		System.out.println("Array Size = " + arrSize);
-
-		double totalCost = cost.size();
-
-		System.out.println(totalCost);
 
 	}
 
